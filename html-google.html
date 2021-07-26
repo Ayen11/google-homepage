@@ -2,7 +2,38 @@
 <html lang="en">
     <style>
         h1 {
-            color:aqua;
+            color:rgb(255, 0, 0);
+        }
+        
+        .searchbox {
+            background-color: transparent;
+        }
+        main {
+            background-color: #fff;
+        }
+        .center {
+            position: absolute;
+            left:50%;
+            top:40%;
+            transform: translate(-50%, -50%);
+        }
+        .offcenter {
+            position: absolute;
+            left:50%;
+            top:48%;
+            transform: translate(-50%, -50%);
+        }
+        .footer {
+            background-color: #aaaaaa;
+            position: absolute;
+            bottom: 0;
+            width: 99%;
+        }
+        .buttons {
+            position: absolute;
+            left:50%;
+            top:53%;
+            transform: translate(-50%, -50%);
         }
     </style>
 <head>
@@ -10,8 +41,23 @@
     <title>Google-Homepage-Mockup</title>
 </head>
 <body>
-    <h1>
-        yoyo hey
-    </h1>
+<main>
+    <div class="center">
+    <img src="googlelogo_color_272x92dp.png" alt="google icon">
+    </div>
+    <div class="offcenter">
+        <input type="text" class="searchbox">
+    </div>
+    <div class="buttons">
+        <input type="submit" value="Google Search">
+        <input type="submit" value="I'm Feelin' Lucky">
+    </div>
+<footer>
+    <div class="footer">
+        <p>heey</p>
+    </div>
+</footer>
+    
+</main>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        h1 {
-            color:rgb(255, 0, 0);
+        p {
+            color:#474a4e;
         }
         
         .searchbox {
@@ -10,6 +10,8 @@
         }
         main {
             background-color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
         }
         .center {
             position: absolute;
@@ -17,23 +19,100 @@
             top:40%;
             transform: translate(-50%, -50%);
         }
-        .offcenter {
+        .searchbar {
             position: absolute;
             left:50%;
-            top:48%;
+            top:50%;
             transform: translate(-50%, -50%);
+            border: 2px solid #cacaca;
+            border-radius: 25px;
+            width:30%;
+            height: auto;
         }
         .footer {
-            background-color: #aaaaaa;
+            background-color: #f2f2f2;
             position: absolute;
             bottom: 0;
-            width: 99%;
+            width: 99.5%;
+            color: rgb(95, 99, 104);
         }
         .buttons {
             position: absolute;
             left:50%;
-            top:53%;
+            top:58%;
             transform: translate(-50%, -50%);
+        }
+
+        .basic_button{
+            padding: 10px;
+            color:#5F6368;
+        }
+        .inputbar {
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+        }
+        .image-search {
+            float: left;
+            padding-left: 5px;
+        }
+        .image-mic {
+            float: right;
+        }
+        .vertical-center {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        .vertical-bottom {
+            display: inline-block;
+            height: 100%;
+            vertical-align: bottom;
+            padding-top: 20px;
+            padding-bottom: 3px;
+        }
+        .vertical-top {
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .horizontal-center {
+            display: inline-block;
+            width: 90%;
+            vertical-align: middle;
+        }
+        input {
+            border: none;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            float:left;
+            padding: 14px 16px;
+            text-align: center;
+            color: #474a4e;
+        }
+        .go-right {
+            display: inline;
+            float: right;
+        }
+        a {
+            color:rgb(56, 56, 56);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .list-up {
+            color:rgb(56, 56, 56);
         }
     </style>
 <head>
@@ -42,19 +121,52 @@
 </head>
 <body>
 <main>
+    <ul>
+        <li class="vertical-bottom"><a class="list-up" href="#about">About</a></li>
+        <li class="vertical-bottom"><a class="list-up" href="#store">Store</a></li>
+        
+        
+        
+        <li class="go-right">
+            <input type="submit" style="background-color: rgb(66, 133, 244); color:#fff; " class="basic_button" value="Sign In">
+        </li>
+        <li class="go-right">
+            <a href="#more apps"><img src="outline_apps_black_24dp.png" style="width:25px; height:25px;" alt="9 square icon"></a>
+        </li>
+        <li class="list-up go-right vertical-bottom"><a href="#gmail">Gmail</a></li>
+        <li class="list-up go-right vertical-bottom"><a href="#images">Images</a></li>
+        
+    </ul>
+
     <div class="center">
-    <img src="googlelogo_color_272x92dp.png" alt="google icon">
+    <img src="googlelogo_color_272x92dp.png" alt="google logo">
     </div>
-    <div class="offcenter">
-        <input type="text" class="searchbox">
+
+    <div class="searchbar" style="text-align: left;">
+        <img class="image-search vertical-center" src="outline_search_black_24dp.png" alt="search icon">
+
+        <input class="inputbar vertical-center horizontal-center" style="padding-top: 10px;" type="text" class="searchbox">
+
+        <img class="image-mic vertical-center" src="sharp_mic_black_24dp.png" alt="microphone icon">
     </div>
+    
     <div class="buttons">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feelin' Lucky">
+        <input type="submit" class="basic_button" value="Google Search">
+        <input type="submit" class="basic_button" value="I'm Feelin' Lucky">
     </div>
+
 <footer>
     <div class="footer">
-        <p>heey</p>
+        <ul>
+            <li class="vertical-top"><a href="#advertising">Advertising</a></li>
+            <li class="vertical-top"><a href="#business">Business</a></li>
+            <li class="vertical-top"><a href="#howsearchworks">How Search Works</a></li>
+
+            <li class="go-right vertical-top"><a href="#privacy">Privacy</a></li>
+            <li class="go-right vertical-top"><a href="#Terms">Terms</a></li>
+            <li class="go-right vertical-top"><a href="#settings">Settings</a></li>
+            
+        </ul>
     </div>
 </footer>
     
